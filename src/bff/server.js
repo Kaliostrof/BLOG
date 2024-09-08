@@ -7,14 +7,15 @@ export const server = {
 		sessions.remove(session);
 	},
 	async authorize(authLogin, authPassword) {
+		console.log(authLogin);
 		const user = await getUser(authLogin);
-
 		if (!user) {
 			return {
 				error: 'Такой пользователь не найден',
 				resp: null,
 			};
 		}
+		console.log(authPassword, user.password);
 
 		if (authPassword !== user.password) {
 			return {
@@ -34,16 +35,16 @@ export const server = {
 		};
 	},
 	async register(regLogin, regPassword) {
-		const user = await getUser(regLogin);
+		const existedUser = await getUser(regLogin);
 
-		if (user) {
+		if (existedUser) {
 			return {
 				error: 'Такой логин уже занят',
 				resp: null,
 			};
 		}
 
-		await addUser(regLogin, regPassword);
+		const user = await addUser(regLogin, regPassword);
 
 		return {
 			error: null,
