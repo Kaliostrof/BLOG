@@ -8,17 +8,10 @@
       "role_id": 0
     },
     {
-      "id": "579a",
-      "login": "tony",
-      "password": "werty5",
-      "registed_at": "2040-02-07 19:56",
-      "role_id": 2
-    },
-    {
-      "id": "8fa0",
+      "id": "c92c",
       "login": "geralt",
       "password": "werty5",
-      "registed_at": "2033-10-08 15:41",
+      "registed_at": "2048-12-31 21:22",
       "role_id": 2
     }
   ],
