@@ -12,7 +12,7 @@
       "login": "geralt",
       "password": "werty5",
       "registed_at": "2048-12-31 21:22",
-      "role_id": 2
+      "role_id": 1
     }
   ],
   "roles": [
@@ -142,13 +142,6 @@
   ],
   "comments": [
     {
-      "id": "2381",
-      "author_id": "001",
-      "post_id": "002",
-      "published_at": "2061-01-29 08:01",
-      "content": "Не дрыхнуть весь день!"
-    },
-    {
       "id": "d068",
       "author_id": "001",
       "post_id": "002",
@@ -256,15 +249,15 @@
       "id": "M1U1JVS"
     },
     {
-      "hash": "0.72031473129062129068245212693000212311744689941406",
+      "hash": "0.77186830509322779114711465808795765042304992675781",
       "user": {
         "id": "c92c",
         "login": "geralt",
         "password": "werty5",
         "registeredAt": "2048-12-31 21:22",
-        "roleId": 2
+        "roleId": 1
       },
-      "id": "2YZL5-F"
+      "id": "3KzbXhx"
     }
   ]
 }
