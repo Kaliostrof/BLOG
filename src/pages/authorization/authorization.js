@@ -9,7 +9,7 @@ import { useResetForm } from '../../hooks';
 import { Link, Navigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setUser } from '../../actions';
-import { selectUseRole } from '../../selectors';
+import { selectUserRole } from '../../selectors';
 import { ROLE } from '../../constants/role';
 
 const authFormSchema = yup.object().shape({
@@ -60,7 +60,7 @@ const AuthorizationContainer = ({ className }) => {
 	const [serverError, setServerError] = useState(null);
 	const dispatch = useDispatch();
 
-	const roleId = useSelector(selectUseRole);
+	const roleId = useSelector(selectUserRole);
 
 	useResetForm(reset);
 

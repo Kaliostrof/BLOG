@@ -168,6 +168,13 @@
       "post_id": "001",
       "published_at": "2058-12-30 02:44",
       "content": "Опять траблы с картинками"
+    },
+    {
+      "author_id": "c92c",
+      "post_id": "002",
+      "published_at": "2043-06-26 11:29",
+      "content": "Делать дела",
+      "id": "MbOBAQl"
     }
   ],
   "sessions": [
@@ -236,6 +243,28 @@
         "registeredAt": "2050-09-22",
         "roleId": 0
       }
+    },
+    {
+      "hash": "0.87745711246893409729352697468129917979240417480469",
+      "user": {
+        "id": "001",
+        "login": "antony",
+        "password": "werty5",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      },
+      "id": "M1U1JVS"
+    },
+    {
+      "hash": "0.72031473129062129068245212693000212311744689941406",
+      "user": {
+        "id": "c92c",
+        "login": "geralt",
+        "password": "werty5",
+        "registeredAt": "2048-12-31 21:22",
+        "roleId": 2
+      },
+      "id": "2YZL5-F"
     }
   ]
 }

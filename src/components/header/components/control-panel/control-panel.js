@@ -4,7 +4,11 @@ import { Icon } from '../../../icon/icon';
 import { Button } from '../../../button/button';
 import { useDispatch, useSelector } from 'react-redux';
 import { ROLE } from '../../../../constants/role';
-import { selectUserLogin, selectUseRole, selectUserSession } from '../../../../selectors';
+import {
+	selectUserLogin,
+	selectUserRole,
+	selectUserSession,
+} from '../../../../selectors';
 import { logout } from '../../../../actions';
 
 const RightAligned = styled.div`
@@ -21,7 +25,7 @@ const UserName = styled.div`
 const ControlPanelContainer = ({ className }) => {
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
-	const roleId = useSelector(selectUseRole);
+	const roleId = useSelector(selectUserRole);
 	const login = useSelector(selectUserLogin);
 	const session = useSelector(selectUserSession);
 
