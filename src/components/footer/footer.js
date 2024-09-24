@@ -6,18 +6,25 @@ const FooterContainer = ({ className }) => {
 	const [temperature, setTemperature] = useState('');
 	const [weather, setWeather] = useState('');
 	useEffect(() => {
-		fetch(
-			'https://api.openweathermap.org/data/2.5/weather?q=Moscow&units=metric&lang=ru&appid=95b2cbdcc21bcbd85464641813e06bbb',
-		)
-			.then((resp) => resp.json())
-			.then((name, main, weather) => {
-				console.log(name.name);
-				console.log(name.main);
-				console.log(name.weather);
-				setCity(name.name);
-				setTemperature(Math.round(name.main.temp));
-				setWeather(name.weather[0].description);
-			});
+		try {
+			fetch(
+				'https://api.openweathermap.org/data/2.5/weather?q=Moscow&units=metric&lang=ru&appid=95b2cbdcc21bcbd85464641813e06bbb',
+			)
+				.then((resp) => {
+					if (!resp.ok) {
+						let error = new Error('Погода будет, но позже');
+						throw error;
+					}
+					return resp.json();
+				})
+				.then((name, main, weather) => {
+					setCity(name.name);
+					setTemperature(Math.round(name.main.temp));
+					setWeather(name.weather[0].description);
+				});
+		} catch (err) {
+			console.log(err);
+		}
 	}, []);
 	return (
 		<div className={className}>

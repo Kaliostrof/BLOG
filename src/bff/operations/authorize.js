@@ -2,7 +2,6 @@ import { getUser } from '../api';
 import { sessions } from '../sessions';
 
 export const authorize = async (authLogin, authPassword) => {
-	console.log(authLogin);
 	const user = await getUser(authLogin);
 	if (!user) {
 		return {

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { forwardRef } from 'react';
 
@@ -15,3 +16,7 @@ export const Input = styled(InputContainer)`
 	font-size: 18px;
 	cursor: poiner;
 `;
+
+Input.propTypes = {
+	width: PropTypes.string,
+};
