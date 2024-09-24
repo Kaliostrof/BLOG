@@ -13,6 +13,34 @@
       "password": "werty5",
       "registed_at": "2048-12-31 21:22",
       "role_id": 1
+    },
+    {
+      "login": "tony",
+      "password": "werty5",
+      "registed_at": "2056-03-20 14:39",
+      "role_id": 1,
+      "id": "xUDKCE7"
+    },
+    {
+      "login": "tony2",
+      "password": "werty5",
+      "registed_at": "2044-11-04 10:32",
+      "role_id": 2,
+      "id": "lCRil0y"
+    },
+    {
+      "login": "tony3",
+      "password": "werty5",
+      "registed_at": "2057-08-24 01:07",
+      "role_id": 2,
+      "id": "vSGeYfQ"
+    },
+    {
+      "login": "tony4",
+      "password": "werty5",
+      "registed_at": "2055-06-15 05:33",
+      "role_id": 2,
+      "id": "A5Bjhuu"
     }
   ],
   "roles": [
@@ -168,77 +196,53 @@
       "published_at": "2043-06-26 11:29",
       "content": "Делать дела",
       "id": "MbOBAQl"
+    },
+    {
+      "author_id": "001",
+      "post_id": "003",
+      "published_at": "2045-01-12 20:46",
+      "content": "Коммент!",
+      "id": "RIaedgP"
+    },
+    {
+      "author_id": "xUDKCE7",
+      "post_id": "001",
+      "published_at": "2044-07-28 10:44",
+      "content": "PROVERKA!",
+      "id": "_5maubq"
+    },
+    {
+      "author_id": "xUDKCE7",
+      "post_id": "005",
+      "published_at": "2062-08-30 03:37",
+      "content": "My comment!",
+      "id": "JlghOQu"
+    },
+    {
+      "author_id": "lCRil0y",
+      "post_id": "003",
+      "published_at": "2035-10-24 18:25",
+      "content": "Press F",
+      "id": "ujeL5x4"
+    },
+    {
+      "author_id": "bbsveKS",
+      "post_id": "004",
+      "published_at": "2045-11-24 22:01",
+      "content": "Proveriaem!",
+      "id": "WqbIf8C"
+    },
+    {
+      "author_id": "A5Bjhuu",
+      "post_id": "008",
+      "published_at": "2039-08-31 03:05",
+      "content": "Проверяем работоспособность!",
+      "id": "CjwpxE-"
     }
   ],
   "sessions": [
     {
-      "id": "cf1d",
-      "hash": "0.51276309399044772696640848153037950396537780761719",
-      "user": {
-        "id": "001",
-        "login": "antony",
-        "password": "werty5",
-        "registeredAt": "2050-09-22",
-        "roleId": 0
-      }
-    },
-    {
-      "id": "362f",
-      "hash": "0.50649785802080415919590450357645750045776367187500",
-      "user": {
-        "id": "001",
-        "login": "antony",
-        "password": "werty5",
-        "registeredAt": "2050-09-22",
-        "roleId": 0
-      }
-    },
-    {
-      "id": "d064",
-      "hash": "0.80957070571990286111940804403275251388549804687500",
-      "user": {
-        "id": "001",
-        "login": "antony",
-        "password": "werty5",
-        "registeredAt": "2050-09-22",
-        "roleId": 0
-      }
-    },
-    {
-      "id": "e857",
-      "hash": "0.73363915964206061204322395497001707553863525390625",
-      "user": {
-        "id": "001",
-        "login": "antony",
-        "password": "werty5",
-        "registeredAt": "2050-09-22",
-        "roleId": 0
-      }
-    },
-    {
-      "id": "faf5",
-      "hash": "0.79767054166631234934925487323198467493057250976563",
-      "user": {
-        "id": "001",
-        "login": "antony",
-        "password": "werty5",
-        "registeredAt": "2050-09-22",
-        "roleId": 0
-      }
-    },
-    {
-      "id": "79e5",
-      "hash": "0.98426342727143834032688118895748630166053771972656",
-      "user": {
-        "id": "001",
-        "login": "antony",
-        "password": "werty5",
-        "registeredAt": "2050-09-22",
-        "roleId": 0
-      }
-    },
-    {
-      "hash": "0.87745711246893409729352697468129917979240417480469",
+      "hash": "0.22568200571025420764215141389286145567893981933594",
       "user": {
         "id": "001",
         "login": "antony",
@@ -246,29 +250,7 @@
         "registeredAt": "2050-09-22",
         "roleId": 0
       },
-      "id": "M1U1JVS"
-    },
-    {
-      "hash": "0.77186830509322779114711465808795765042304992675781",
-      "user": {
-        "id": "c92c",
-        "login": "geralt",
-        "password": "werty5",
-        "registeredAt": "2048-12-31 21:22",
-        "roleId": 1
-      },
-      "id": "3KzbXhx"
-    },
-    {
-      "hash": "0.62948068119722311308805728913284838199615478515625",
-      "user": {
-        "id": "001",
-        "login": "antony",
-        "password": "werty5",
-        "registeredAt": "2050-09-22",
-        "roleId": 0
-      },
-      "id": "YcJv5F7"
+      "id": 1
     }
   ]
 }

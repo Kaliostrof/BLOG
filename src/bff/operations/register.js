@@ -1,5 +1,6 @@
 import { addUser, getUser } from '../api';
 import { sessions } from '../sessions';
+import { transformUser } from '../transformers';
 
 export const register = async (regLogin, regPassword) => {
 	const existedUser = await getUser(regLogin);
@@ -19,7 +20,7 @@ export const register = async (regLogin, regPassword) => {
 			id: user.id,
 			login: user.login,
 			roleId: user.role_id,
-			session: sessions.create(user),
+			session: sessions.create(transformUser(user)),
 		},
 	};
 };
